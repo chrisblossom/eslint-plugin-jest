@@ -2,7 +2,7 @@ import { readdirSync } from 'fs';
 import { basename, join } from 'path';
 import * as snapshotProcessor from './processors/snapshot-processor';
 
-// copied from https://github.com/babel/babel/blob/56044c7851d583d498f919e9546caddf8f80a72f/packages/babel-helpers/src/helpers.js#L558-L562
+// copied from https://github.com/babel/babel/blob/d8da63c929f2d28c401571e2a43166678c555bc4/packages/babel-helpers/src/helpers.js#L602-L606
 /* istanbul ignore next */
 function interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
