@@ -11,7 +11,7 @@ module.exports = {
   ],
   plugins: ['eslint-plugin', 'node', 'prettier'],
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
   },
   env: {
     node: true,
@@ -24,12 +24,7 @@ module.exports = {
     'object-shorthand': ['warn', 'always', { avoidExplicitReturnArrows: true }],
     'prefer-destructuring': [
       'error',
-      {
-        VariableDeclarator: {
-          array: true,
-          object: true,
-        },
-      },
+      { VariableDeclarator: { array: true, object: true } },
     ],
     'prettier/prettier': 'error',
     'node/no-unsupported-features/es-syntax': 'off',
@@ -39,6 +34,12 @@ module.exports = {
     {
       files: ['*.test.js'],
       globals,
+    },
+    {
+      files: 'src/**/*',
+      parserOptions: {
+        sourceType: 'module',
+      },
     },
   ],
 };

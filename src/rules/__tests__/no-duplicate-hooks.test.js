@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../no-duplicate-hooks');
+import rule from '../no-duplicate-hooks';
 
 const ruleTester = new RuleTester({
   parserOptions: {

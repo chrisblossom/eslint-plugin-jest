@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../prefer-to-be-null');
+import rule from '../prefer-to-be-null';
 
 const ruleTester = new RuleTester();
 

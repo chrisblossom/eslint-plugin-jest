@@ -1,7 +1,7 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../no-large-snapshots');
+import rule from '../no-large-snapshots';
+
 const noLargeSnapshots = rule.create;
 
 const ruleTester = new RuleTester({

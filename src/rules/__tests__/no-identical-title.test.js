@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../no-identical-title');
+import rule from '../no-identical-title';
 
 const ruleTester = new RuleTester();
 

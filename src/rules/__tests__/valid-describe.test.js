@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../valid-describe');
+import rule from '../valid-describe';
 
 const ruleTester = new RuleTester({
   parserOptions: {

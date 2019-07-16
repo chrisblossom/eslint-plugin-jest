@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../lowercase-name');
+import rule from '../lowercase-name';
 
 const ruleTester = new RuleTester({
   parserOptions: {

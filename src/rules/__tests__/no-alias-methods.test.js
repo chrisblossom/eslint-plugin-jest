@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../no-alias-methods');
+import rule from '../no-alias-methods';
 
 const ruleTester = new RuleTester();
 

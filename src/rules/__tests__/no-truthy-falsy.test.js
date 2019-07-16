@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../no-truthy-falsy');
+import rule from '../no-truthy-falsy';
 
 const ruleTester = new RuleTester();
 

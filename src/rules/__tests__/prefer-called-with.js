@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../prefer-called-with');
+import rule from '../prefer-called-with';
 
 const ruleTester = new RuleTester();
 

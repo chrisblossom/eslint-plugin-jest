@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../prefer-spy-on');
+import rule from '../prefer-spy-on';
 
 const ruleTester = new RuleTester({
   parserOptions: {

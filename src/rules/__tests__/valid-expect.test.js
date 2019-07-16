@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../valid-expect');
+import rule from '../valid-expect';
 
 const ruleTester = new RuleTester();
 

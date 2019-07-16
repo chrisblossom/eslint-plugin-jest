@@ -1,7 +1,6 @@
-'use strict';
+import rule from '../no-jest-import.js';
+import { RuleTester } from 'eslint';
 
-const rule = require('../no-jest-import.js');
-const { RuleTester } = require('eslint');
 const ruleTester = new RuleTester();
 
 ruleTester.run('no-jest-import', rule, {

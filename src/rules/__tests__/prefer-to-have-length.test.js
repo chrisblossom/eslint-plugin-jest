@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../prefer-to-have-length');
+import rule from '../prefer-to-have-length';
 
 const ruleTester = new RuleTester();
 

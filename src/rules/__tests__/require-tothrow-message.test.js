@@ -1,7 +1,6 @@
-'use strict';
+import { RuleTester } from 'eslint';
 
-const { RuleTester } = require('eslint');
-const rule = require('../require-tothrow-message');
+import rule from '../require-tothrow-message';
 
 const ruleTester = new RuleTester({
   parserOptions: {

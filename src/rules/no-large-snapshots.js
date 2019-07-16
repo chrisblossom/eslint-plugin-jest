@@ -1,6 +1,4 @@
-'use strict';
-
-const { getDocsUrl } = require('./util');
+import { getDocsUrl } from './util';
 
 const reportOnViolation = (context, node) => {
   const lineLimit =
@@ -20,7 +18,7 @@ const reportOnViolation = (context, node) => {
   }
 };
 
-module.exports = {
+export default {
   meta: {
     docs: {
       url: getDocsUrl(__filename),
