@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../lowercase-name';
 
 const ruleTester = new RuleTester({

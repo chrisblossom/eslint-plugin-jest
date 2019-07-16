@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../prefer-expect-assertions';
 
 const ruleTester = new RuleTester({

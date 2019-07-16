@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../prefer-to-be-undefined';
 
 const ruleTester = new RuleTester();

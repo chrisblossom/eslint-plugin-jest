@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../no-large-snapshots';
 
 const noLargeSnapshots = rule.create;

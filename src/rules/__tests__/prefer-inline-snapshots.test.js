@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../prefer-inline-snapshots';
 
 const ruleTester = new RuleTester();

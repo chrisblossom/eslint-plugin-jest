@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../prefer-to-have-length';
 
 const ruleTester = new RuleTester();

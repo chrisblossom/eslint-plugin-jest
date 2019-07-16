@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../no-jasmine-globals';
 
 const ruleTester = new RuleTester();

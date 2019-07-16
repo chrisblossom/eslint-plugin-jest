@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../valid-describe';
 
 const ruleTester = new RuleTester({

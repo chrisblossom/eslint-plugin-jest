@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../no-disabled-tests';
 
 const ruleTester = new RuleTester({

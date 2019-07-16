@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../no-identical-title';
 
 const ruleTester = new RuleTester();

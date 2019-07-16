@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../prefer-strict-equal';
 
 const ruleTester = new RuleTester();

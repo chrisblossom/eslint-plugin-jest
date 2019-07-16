@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../prefer-todo';
 
 const ruleTester = new RuleTester({

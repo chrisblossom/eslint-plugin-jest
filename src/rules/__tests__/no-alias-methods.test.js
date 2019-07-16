@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../no-alias-methods';
 
 const ruleTester = new RuleTester();

@@ -1,5 +1,5 @@
-import rule from '../no-jest-import.js';
 import { RuleTester } from 'eslint';
+import rule from '../no-jest-import.js';
 
 const ruleTester = new RuleTester();
 

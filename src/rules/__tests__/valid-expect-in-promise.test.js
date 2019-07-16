@@ -1,5 +1,4 @@
 import { RuleTester } from 'eslint';
-
 import rule from '../valid-expect-in-promise';
 
 const ruleTester = new RuleTester({
