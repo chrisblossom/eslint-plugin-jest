@@ -8,6 +8,11 @@ const numberOfRules = 35;
 describe('rules', () => {
   it('should have a corresponding doc for each rule', () => {
     ruleNames.forEach(rule => {
+      // require-tothrow-message has been renamed to require-to-throw-message
+      if (rule === 'require-tothrow-message') {
+        return;
+      }
+
       const docPath = resolve(__dirname, '../../docs/rules', `${rule}.md`);
 
       if (!existsSync(docPath)) {
