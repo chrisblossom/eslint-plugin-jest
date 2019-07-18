@@ -1,9 +1,13 @@
 import requireToThrowMessage from './require-to-throw-message';
 
-const requireTothrowMessage = Object.assign({}, requireToThrowMessage);
+const replacedBy = ['require-to-throw-message'];
 
-requireTothrowMessage.meta.deprecated = true;
-requireTothrowMessage.meta.replacedBy = ['require-to-throw-message'];
-requireTothrowMessage.meta.docs.replacedBy = ['require-to-throw-message'];
+const requireTothrowMessage = Object.assign({}, requireToThrowMessage, {
+  meta: Object.assign({}, requireToThrowMessage.meta, {
+    deprecated: true,
+    replacedBy,
+    docs: Object.assign({}, requireToThrowMessage.meta.docs, { replacedBy }),
+  }),
+});
 
 export default requireTothrowMessage;
