@@ -2,12 +2,12 @@ import { existsSync } from 'fs';
 import { resolve } from 'path';
 import { rules } from '../';
 
-const ruleNames = Object.keys(rules).filter(rule => {
-  const excludeRules = [
-    // require-tothrow-message has been renamed to require-to-throw-message
-    'require-tothrow-message',
-  ];
+const excludeRules = [
+  // require-tothrow-message has been renamed to require-to-throw-message
+  'require-tothrow-message',
+];
 
+const ruleNames = Object.keys(rules).filter(rule => {
   return excludeRules.includes(rule) === false;
 });
 const numberOfRules = 35;
