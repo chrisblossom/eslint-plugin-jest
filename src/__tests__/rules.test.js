@@ -2,17 +2,19 @@ import { existsSync } from 'fs';
 import { resolve } from 'path';
 import { rules } from '../';
 
-const ruleNames = Object.keys(rules);
+const ruleNames = Object.keys(rules).filter(rule => {
+  const excludeRules = [
+    // require-tothrow-message has been renamed to require-to-throw-message
+    'require-tothrow-message',
+  ];
+
+  return excludeRules.includes(rule) === false;
+});
 const numberOfRules = 35;
 
 describe('rules', () => {
   it('should have a corresponding doc for each rule', () => {
     ruleNames.forEach(rule => {
-      // require-tothrow-message has been renamed to require-to-throw-message
-      if (rule === 'require-tothrow-message') {
-        return;
-      }
-
       const docPath = resolve(__dirname, '../../docs/rules', `${rule}.md`);
 
       if (!existsSync(docPath)) {
