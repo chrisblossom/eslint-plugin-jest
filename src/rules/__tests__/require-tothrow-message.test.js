@@ -1,5 +1,5 @@
 import { RuleTester } from 'eslint';
-import rule from '../require-tothrow-message';
+import rule from '../require-to-throw-message';
 
 const ruleTester = new RuleTester({
   parserOptions: {
@@ -7,7 +7,7 @@ const ruleTester = new RuleTester({
   },
 });
 
-ruleTester.run('require-tothrow-message', rule, {
+ruleTester.run('require-to-throw-message', rule, {
   valid: [
     // String
     "expect(() => { throw new Error('a'); }).toThrow('a');",

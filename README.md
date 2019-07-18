@@ -135,7 +135,7 @@ installations requiring long-term consistency.
 | [prefer-to-contain][]        | Suggest using `toContain()`                                       |                  | ![fixable-green][]  |
 | [prefer-to-have-length][]    | Suggest using `toHaveLength()`                                    |                  | ![fixable-green][]  |
 | [prefer-inline-snapshots][]  | Suggest using `toMatchInlineSnapshot()`                           |                  | ![fixable-green][]  |
-| [require-tothrow-message][]  | Require that `toThrow()` and `toThrowError` includes a message    |                  |                     |
+| [require-to-throw-message][] | Require that `toThrow()` and `toThrowError` includes a message    |                  |                     |
 | [valid-describe][]           | Enforce valid `describe()` callback                               | ![recommended][] |                     |
 | [valid-expect-in-promise][]  | Enforce having return statement when testing with promises        | ![recommended][] |                     |
 | [valid-expect][]             | Enforce valid `expect()` usage                                    | ![recommended][] |                     |
@@ -186,7 +186,7 @@ https://github.com/dangreenisrael/eslint-plugin-jest-formatting
 [prefer-to-contain]: docs/rules/prefer-to-contain.md
 [prefer-to-have-length]: docs/rules/prefer-to-have-length.md
 [prefer-inline-snapshots]: docs/rules/prefer-inline-snapshots.md
-[require-tothrow-message]: docs/rules/require-tothrow-message.md
+[require-to-throw-message]: docs/rules/require-to-throw-message.md
 [valid-describe]: docs/rules/valid-describe.md
 [valid-expect-in-promise]: docs/rules/valid-expect-in-promise.md
 [valid-expect]: docs/rules/valid-expect.md

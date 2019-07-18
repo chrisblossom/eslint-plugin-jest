@@ -1,41 +1,9 @@
-import { argument, expectCase, getDocsUrl, method } from './util';
+import requireToThrowMessage from './require-to-throw-message';
 
-export default {
-  meta: {
-    docs: {
-      url: getDocsUrl(__filename),
-    },
-    messages: {
-      requireRethrow: 'Add an error message to {{ propertyName }}()',
-    },
-    schema: [],
-  },
-  create(context) {
-    return {
-      CallExpression(node) {
-        if (!expectCase(node)) {
-          return;
-        }
+const requireTothrowMessage = Object.assign({}, requireToThrowMessage);
 
-        let targetNode = method(node);
-        if (targetNode.name === 'rejects') {
-          targetNode = method(node.parent);
-        }
+requireTothrowMessage.meta.deprecated = true;
+requireTothrowMessage.meta.replacedBy = ['require-to-throw-message'];
+requireTothrowMessage.meta.docs.replacedBy = ['require-to-throw-message'];
 
-        const propertyName = method(targetNode) && method(targetNode).name;
-
-        // Look for `toThrow` calls with no arguments.
-        if (
-          ['toThrow', 'toThrowError'].includes(propertyName) &&
-          !argument(targetNode)
-        ) {
-          context.report({
-            messageId: 'requireRethrow',
-            data: { propertyName },
-            node: targetNode,
-          });
-        }
-      },
-    };
-  },
-};
+export default requireTothrowMessage;
